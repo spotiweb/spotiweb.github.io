@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="img/Captura de pantalla 2025-04-30 105944.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoti Web</title>
+    <link rel="stylesheet" href="diseo.css">
+</head>
+<body>
+    <div id="wrapper1">
+        <div class="header">                
+            <h1>
+                <img src="img/lc.png" alt="Logo de Spoti" class="logo">
+            </h1>
+        <section id="home">
+                <div class="image filtered" data-position="center">
+                    <img src="img/1.png" alt> 
+                </div>
+                <div class="content">
+                    <h1>Spoti</h1>
+                    <p>En un mundo cada vez más conectado, ¿por qué seguir cuidando tus plantas a ciegas? Spoti es mucho más que una maceta inteligente: es un sistema adaptable de monitoreo y cuidado de plantas que combina los sensores esenciales con una app intuitiva y potente, disponible para Android y iOS.</p>
+                    <p>Desde el hogar hasta espacios productivos, Spoti se ajusta a distintos entornos y crece con vos. Controlá la salud de tus plantas en tiempo real, sin complicaciones.</p>
+                    <button>
+                        <a href="#prob">Conocer más</a>
+                    </button>
+                </div>
+        </section>
+
+        <section id="prob">
+            <h2>PROBLEMATICAS</h2>
+            <span class="problematicas-txt">
+                <P>Hoy en día, muchas personas no tienen el hábito de cuidar plantas. Ya sea por falta de tiempo, conocimiento o costumbre, el vínculo con lo natural se ha perdido en la vida cotidiana, especialmente en entornos urbanos.
+                <p>El desconocimiento sobre riego, luz o temperatura lleva a errores comunes que afectan la salud de las plantas. Esto genera frustración, desperdicio de recursos como el agua y hace que muchas personas abandonen la idea de tener plantas en casa.
+                <p>Spoti nace para cambiar esta realidad: combinamos innovación tecnológica con distintos tipos de sensores y un microcontrolador que los maneja y soluciones simples para fomentar el cuidado de las plantas, optimizar el uso del agua y reconectar con lo verde de forma consciente y sostenible.
+                </p>
+            </span>
+            <hr class="lineas">
+            <p class="subtitulo">SOLUCIONES DE SPOTI</p>
+            <ul class="iconos1">
+                <li>
+                    <span class="agua">
+                        <img src="img/celu.webp" alt="Icono de celular">
+                    </span>
+                    <h3>Monitoreo en tiempo real</h3>
+                </li>
+                <li>
+                    <span class="sensor">
+                        <img src="img/sensor.png" alt="Icono de sensor">
+                    </span>
+                    <h3>Microcontrolador y sensores</h3>
+                </li>
+                <li>
+                    <span class="planta">
+                        <img src="img/arbol.png" alt="Icono de planta">
+                    </span>
+                    <h3>Cuidado del medio ambiente</h3>
+                </li>
+            </ul>
+            <hr class="lineas">
+                    
+                    
+        <ul class="iconos2">
+            <li>
+                <span class="agua">
+                    <img src="img/celu.webp" alt="Icono de agua">
+                </span>
+                <h3>El monitoreo de los sensores y control del riego está se logran mediante una aplicacion movil desarrollada con react native la cual es el intermediario entre nosotros y nuestra maceta</h3>
+            </li>
+            <li>
+                <span class="sensor">
+                    <img src="img/sensor.png" alt="Icono de sensor">
+                </span>
+                <h3>La tarea principal de nuestra maceta es gracias a distintos tipos de sensores conectados a un microcontrolador llamado esp-32, el cual controla los sensores y hace que el sistema de riego funcione</h3>
+            </li>
+            <li>
+                <span class="planta">
+                    <img src="img/arbol.png" alt="Icono de planta">
+                </span>
+                <h3>en la actualidad se nota claramente la falta de costumbre de tener y cuidar plantas en nuestros hogares. El mal uso de los recursos y el poco cuidade estas tambien es una problematica que nos atraviesa</h3>
+            </li>
+        </ul>
+        </section>
+
+        <section id="info">
+            <div class="info-esp">
+                <div class="esp-txt">
+                <h2>ESPECIFICACIONES</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <div class="fila-imagenes">
+                            <td><img src="img/esp32 imagen.png" alt="esp32" class="img-ajustable esp"></td>
+                            <td><img src="img/capturapp.jpg" alt="app" class="img-ajustable app"></td>
+                            <td><img src="img/macetap.png" alt="maceta" class="img-ajustable maceta"></td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <div class="fila-textos">
+                            <td><div class="texto-item">Esp-32: el microcontrolador que funciona como el cerebro de la Maceta, quien recibe los datos de los sensores y se comunica con la app</div></td>
+                            <td><div class="texto-item">La intermediaria entre la maceta y el usuario. Interfaz donde nos conectamos con nuestra planta, enviamos y recibimos datos gracias a ella</div></td>
+                            <td><div class="texto-item">El elemento más importante; la maceta. demás de contener nuestra planta favorita, en este recipiente diseñado e impreso en 3d se encuentran los componentes electrónicos necesarios</div></td>
+                        </div>
+                    </tr>
+                
+
+
+                <tr>
+                <div class="botones-info">
+                    <td><button id="btn-mas-hard" onclick="mostrarInfo('hard')">Más información</button></td>
+                    <td><button id="btn-mas-soft" onclick="mostrarInfo('soft')">Más información</button></td>
+                    <td><button id="btn-mas-p" onclick="mostrarInfo('p')">Más información</button></td>
+                </div>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div id="info-hard" style="display:none;">
+                            <p class="texto-hard">El ESP32 es un microcontrolador con Wi-Fi y Bluetooth integrado, muy usado en proyectos de electrónica e IoT por su potencia, bajo consumo y facilidad para programarlo con Arduino o MicroPython, ideal para crear dispositivos inteligentes conectados.</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div id="info-soft" style="display:none;">
+                            <p class="texto-soft">La aplicación está desarrollada con react native y programada en java script. Se conecta mediante bluetooth a la maceta (al esp32) para lograr monitorear y controlar tanto los sensores como el riego. La app cuenta con una interfaz de fácil interacción para el usuario final.</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div id="info-p" style="display:none;">
+                        <p class="texto-p"> Desde el hogar se encuentra este diseño propio que intengra todas las necesidades requeridas, una solución versátil y adaptable. Pensada para sea funcional y estetica en el</p>
+                        </div>
+                    </td>
+
+                </tr> 
+
+                <script>
+                    function mostrarInfo(tipo) {
+                        // Referencias a los elementos
+                        var hard = document.getElementById('info-hard');
+                        var soft = document.getElementById('info-soft');
+                        var p = document.getElementById('info-p');
+                        var btnHard = document.getElementById('btn-mas-hard');
+                        var btnSoft = document.getElementById('btn-mas-soft');
+                        var btnP = document.getElementById('btn-mas-p');
+
+                        // Si el cuadro ya está visible y se toca el mismo botón, ocultar
+                        if (tipo === 'hard' && hard.style.display === 'block') {
+                            hard.style.display = 'none';
+                            btnHard.textContent = 'Más información';
+                            return;
+                        }
+                        if (tipo === 'soft' && soft.style.display === 'block') {
+                            soft.style.display = 'none';
+                            btnSoft.textContent = 'Más información';
+                            return;
+                        }
+                        if (tipo === 'p' && p.style.display === 'block') {
+                            p.style.display = 'none';
+                            btnP.textContent = 'Más información';
+                            return;
+                        }
+
+                        // Oculta todos los cuadros y restaura los botones
+                        hard.style.display = 'none';
+                        soft.style.display = 'none';
+                        p.style.display = 'none';
+                        btnHard.textContent = 'Más información';
+                        btnSoft.textContent = 'Más información';
+                        btnP.textContent = 'Más información';
+
+                        // Muestra solo el seleccionado y cambia el texto del botón
+                        if (tipo === 'hard') {
+                            hard.style.display = 'block';
+                            btnHard.textContent = 'Ocultar información';
+                        } else if (tipo === 'soft') {
+                            soft.style.display = 'block';
+                            btnSoft.textContent = 'Ocultar información';
+                        } else if (tipo === 'p') {
+                            p.style.display = 'block';
+                            btnP.textContent = 'Ocultar información';
+                        }
+                    }
+                </script>
+                </table>
+            </div>
+
+        </section>
+
+        <section id="ev">
+            <h2>PROGRESO Y PROYECCIONES</h2>
+            <p>
+            </p>
+                <div class="card-cont">
+                    <div class="card">
+                        <div class="face front">
+                            <img src="img/galery/huerta1.jpg" alt="">
+                            <h3>Expansión</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Expansión</h3>
+                            <p>Se proyecta que Spoti sea un sistema adaptable hacia plantaciones más grandes, en el cual se pueda automatizar el riego. Manteniendo las bases y la conectividad con tu aplicacion y sus funciones.</p>
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="face front">
+                            <img src="img/galery/bdd1.jpeg" alt="">
+                            <h3>Base de datos</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Base de datos</h3>
+                            <p>Como proximo objetivo en cuanto al software, se plantea utilizar una base de datos externa para la aplicacion con la cual el usuario pueda obtener especificaciones sobre su tipo de planta</p>
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="face front">
+                            <img src="img/galery/3.jpg" alt="">
+                            <h3>Participaciones</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Participaciones</h3>
+                                <ul class="ul-participaciones">
+                                    <li>MITR 2024</li>
+                                    <li>Feria Universidad de Atlanta Mar de Ajo 2024</li>
+                                    <li>Feria de Ciencias Local 2025</li>
+                                    <li>Feria de Ciencias Regional 2025</li>
+                                    <li>MITR 2025</li>
+                                </ul>
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+</html>
+
