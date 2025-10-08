@@ -309,7 +309,7 @@ table th, table td {
 }
 .info-esp h2 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: clamp(2rem, 6vw, 3rem); /* Se adapta al ancho de la pantalla */
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -692,4 +692,69 @@ table {
 }
 .ul-participaciones li {
     color: #fff;
+}
+
+.contacto {
+    background-image: linear-gradient(30deg, #2f9a5f, #f3f1e7);
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    padding: 1rem 0rem 1rem; /* Espacio arriba y abajo */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100px;  
+}
+
+.contacto h2 {
+    color: #fff;
+    font-size: clamp(2rem, 6vw, 3rem); /* Se adapta al ancho de la pantalla */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contacto p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 700px; /* Limita el ancho del texto */
+}
+
+.iconos3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.iconos3 li {
+    text-align: center;
+    margin-bottom: 2rem; /* Espacio entre los iconos */
+    display: flex;
+    flex-direction: column; /* Alinea el texto debajo de la imagen */
+    align-items: center; /* Centra horizontalmente */
+    color: #fff;
+}
+.iconos3 img {
+    width: 60px;    /* o el tamaño que prefieras */
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.iconos3 a {
+    color: #fff;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 0.5rem; /* Espacio entre la imagen y el texto */
+}
+.iconos3 a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    color: #ddd; /* Cambia el color al pasar el mouse */
 }
