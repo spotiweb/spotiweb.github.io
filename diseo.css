@@ -694,6 +694,11 @@ table {
     color: #fff;
 }
 
+.redes {
+    margin-right: 0;
+    padding-inline-start: 0%;
+    padding: 0px 0px 0px 0px; ;
+}
 .contacto {
     background-image: linear-gradient(30deg, #2f9a5f, #f3f1e7);
     width: 100%;
